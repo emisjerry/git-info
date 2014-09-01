@@ -4,6 +4,8 @@ There's no "git info" command, so i decide to write one for myself, a Git newbie
 
 Written in Free Pascal via [Lazarus IDE v1.2.4](http://www.lazarus.freepascal.org/).
 
+Windows only currently.
+
 ###Setup
 1. Copy git-info.exe into **<Git install folder>\libexec\git-core**. We can use "**git info**" to execute this command from now on.
 2. After run "git info", git-info.ini will be generated in git-core folder, youn can modify git-info.ini to statisfy your own needs.

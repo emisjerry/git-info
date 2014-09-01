@@ -164,7 +164,7 @@ begin
   _sCurrentDir := GetCurrentDir();
 
   if not FileExists('.git/HEAD') then begin
-    WriteLn('echo This folder is not a Git working directory.');
+    WriteLn('This folder is not a Git working directory.');
     Terminate;
     Exit;
   end;
