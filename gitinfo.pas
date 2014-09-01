@@ -175,7 +175,7 @@ begin
     _oIni.WriteString('Command', 'cmd2.title', '===All branches:');
     _oIni.WriteString('Command', 'cmd2.exec', 'git branch -a');
     _oIni.WriteString('Command', 'cmd3.title', '===Recent commits:');
-    _oIni.WriteString('Command', 'cmd3.exec', 'git log --oneline');
+    _oIni.WriteString('Command', 'cmd3.exec', 'git log --pretty=format:"%C(yellow)%h %C(cyan)%ai %C(bold green)[%cn]%C(bold red)%d %C(bold green)%s%C(reset)" -10  --abbrev-commit --abbrev=4');
     _oIni.WriteString('Command', 'cmd4.title', '===Current Status:');
     _oIni.WriteString('Command', 'cmd4.exec', 'git status');
     _oIni.WriteString('Prompt', 'DefaultFG', 'light green');
