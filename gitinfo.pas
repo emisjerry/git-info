@@ -145,7 +145,7 @@ var _iPos, i: Integer;
   _sBranchName, _sCurrentDir, _sText, _sExeFileDir: String;
   _sTempDir, _sDefaultFGColor, _shighlightFGColor: String;
   _sDefaultBGColor, _shighlightBGColor, _sParam: String;
-  _sTitle, _sCmd: String;
+  _sTitle, _sCmd, _sPrompt: String;
   s, _sResult, _sPretty, _sMaxCount, _sBatchFile: AnsiString;
   _oFileHEAD : TextFile;
   _oFileBatch: TextFile;
@@ -221,9 +221,19 @@ begin
     ReWrite(_oFileBatch);
 
     _sBranchName := Copy(_sText, _iPos+6, 99);
-    s := '$p ($E[' + _sHighlightFGColor + _sHighlightBGColor + 'm' +
+    _sPrompt := '@prompt $p ($E[' + _sHighlightFGColor + _sHighlightBGColor + 'm' +
          _sBranchName + '$E[' + _sDefaultFGColor + _sDefaultBGColor + 'm)$g';
-    Writeln(_oFileBatch, '@prompt ' + s);
+
+    s := '@echo off' + #13#10 +
+         'if exist .git\HEAD goto GIT' + #13#10 +
+         'goto NOT_GIT' + #13#10 +
+         ':GIT' + #13#10 +
+         '  ' + _sPrompt + #13#10 +
+         '  goto END' + #13#10 +
+         ':NOT_GIT' + #13#10 +
+         '  prompt $p$g' + #13#10 +
+         ':END' + #13#10;
+    Writeln(_oFileBatch, s);
     CloseFile(_oFileBatch);
 
     _sResult := Concat(_sResult, '===Notes:'#13#10);
