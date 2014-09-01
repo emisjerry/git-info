@@ -4,7 +4,7 @@ There's no "git info" command, so i decide to write one for myself, a Git newbie
 
 Written in Free Pascal via [Lazarus IDE v1.2.4](http://www.lazarus.freepascal.org/).
 
-Windows only currently.
+~~Windows only currently.~~ Linux will works now.
 
 ###Setup
 1. Copy git-info.exe into **<Git install folder>\libexec\git-core**. We can use "**git info**" to execute this command from now on.
@@ -42,3 +42,4 @@ Windows only currently.
 
 ###Version info
 * v0.01 2014/09/01 Initial version
+* v0.02 2014/09/02 Linux compatible changes
