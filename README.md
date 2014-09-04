@@ -14,7 +14,6 @@ Windows only currently.
 ###Usage
 ```batchfile
     git info
-    git info && %TEMP%\git-prompt.bat
     git info && git-prompt.bat
     git info -?
 ```
@@ -31,15 +30,9 @@ Windows only currently.
   cmd3.exec=git log --pretty=format:"%C(yellow)%h %C(cyan)%ai %C(bold green)[%cn]%C(bold red)%d %C(bold green)%s%C(reset)" -10  --abbrev-commit --abbrev=4 
   cmd4.title=====Status:
   cmd4.exec=git status
-  
-[Prompt]
-  DefaultFG=light green
-  DefaultBG=black
-  HighlightFG=light yellow
-  HighlightBG=black
-  PromptBatch=d:\util\git-prompt.bat
 ```
 
 ###Version info
 * v0.01 2014/09/01 Initial version
 * v0.02 2014/09/02 Move prompt processing to a new command: git prompt
+* v0.03 2014/09/04 read .git/HEAD by git rev-parse command to get it properly  
