@@ -1,6 +1,10 @@
 {
   gitinfo: Git info utility
   Author: Jerry Jian (emisjerry@gmail.com)
+
+  v0.01 2014/09/01: Initial revision
+  v0.02 2014/09/02: Move git prompt to another command
+  v0.03 2014/09/04: read .git/HEAD by git rev-parse command to get it properly
 }
 program gitinfo;
 
@@ -27,7 +31,7 @@ type
 
   const
     _DEBUG: Boolean = true;
-    _VERSION:String = '0.2 2014/09/02';
+    _VERSION:String = '0.3 2014/09/04';
 
 { TMyApplication }
 
@@ -41,6 +45,19 @@ begin
   writeln('');
   writeln('Settings file (git-info.ini) can be found in the git-info.exe''s folder.');
   Result := true;
+end;
+
+function getHEADFile(): String;
+var
+  _sResult, s: String;
+begin
+  _sResult := '.git/HEAD';
+  // git rev-parse --show-toplevel will get the root folder
+  if (RunCommand('git', ['rev-parse', '--show-toplevel'], s)) then begin
+    s := Copy(s, 1, Length(s)-1);  // remove the last #10
+    _sResult := s + '/' + _sResult;
+  end;
+  Result := _sResult;
 end;
 
 function exec(sTitle: String; sCmd: String; s: String): String;
@@ -73,7 +90,7 @@ end;
 procedure TMyApplication.DoRun;
 var i: Integer;
   _sParam, _sExeFileDir, _sCurrentDir, _sTitle, _sCmd: String;
-  s, _sResult: AnsiString;
+  s, _sResult, _sHEADFile: AnsiString;
   _oIni: TIniFile;
 begin
   { add your program here }
@@ -87,8 +104,9 @@ begin
 
   _sExeFileDir := ExtractFilePath(ExeName);
   _sCurrentDir := GetCurrentDir();
+  _sHEADFile := GetHEADFile();
 
-  if not FileExists('.git/HEAD') then begin
+  if not FileExists(_sHEADFile) then begin
     WriteLn('This folder is not a Git working directory.');
     Terminate;
     Exit;
