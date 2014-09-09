@@ -5,6 +5,7 @@
   v0.01 2014/09/01: Initial revision
   v0.02 2014/09/02: Move git prompt to another command
   v0.03 2014/09/04: read .git/HEAD by git rev-parse command to get it properly
+  v0.04 2014/09/09: change help version
 }
 program gitinfo;
 
@@ -31,7 +32,7 @@ type
 
   const
     _DEBUG: Boolean = true;
-    _VERSION:String = '0.3 2014/09/04';
+    _VERSION:String = '0.4 2014/09/09';
 
 { TMyApplication }
 
@@ -96,7 +97,7 @@ begin
   { add your program here }
   _sParam := '';
   if (ParamCount = 1) then _sParam := ParamStr(1);
-  if (_sParam = '-?') or (_sParam = '-help') then begin
+  if (_sParam = '-?') or (_sParam = '-help') or (_sParam = '-h')then begin
     help();
     Terminate;
     Exit;
@@ -122,6 +123,7 @@ begin
     _oIni.WriteString('Command', 'cmd4.title', '===Current Status:');
     _oIni.WriteString('Command', 'cmd4.exec', 'git status');
   end;
+  _oIni.WriteString('Command', 'version', _VERSION);
 
   _sResult := '';
 
