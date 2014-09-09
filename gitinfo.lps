@@ -12,9 +12,9 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="134"/>
-        <CursorPos X="40" Y="146"/>
-        <UsageCount Value="27"/>
+        <TopLine Value="91"/>
+        <CursorPos X="36" Y="107"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -81,123 +81,123 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="102" Column="49" TopLine="88"/>
+        <Caret Line="185" Column="1" TopLine="171"/>
       </Position1>
       <Position2>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="171" Column="35" TopLine="154"/>
+        <Caret Line="119" Column="18" TopLine="106"/>
       </Position2>
       <Position3>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="122" Column="37" TopLine="107"/>
+        <Caret Line="222" Column="32" TopLine="203"/>
       </Position3>
       <Position4>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="127" Column="31" TopLine="107"/>
+        <Caret Line="117" Column="62" TopLine="102"/>
       </Position4>
       <Position5>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="123" Column="59" TopLine="109"/>
+        <Caret Line="30" Column="5" TopLine="18"/>
       </Position5>
       <Position6>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="185" Column="1" TopLine="171"/>
+        <Caret Line="126" Column="23" TopLine="111"/>
       </Position6>
       <Position7>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="119" Column="18" TopLine="106"/>
+        <Caret Line="132" Column="77" TopLine="111"/>
       </Position7>
       <Position8>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="222" Column="32" TopLine="203"/>
+        <Caret Line="126" Column="23" TopLine="111"/>
       </Position8>
       <Position9>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="117" Column="62" TopLine="102"/>
+        <Caret Line="188" Column="1" TopLine="158"/>
       </Position9>
       <Position10>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="30" Column="5" TopLine="18"/>
+        <Caret Line="132" Column="43" TopLine="109"/>
       </Position10>
       <Position11>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="126" Column="23" TopLine="111"/>
+        <Caret Line="128" Column="31" TopLine="111"/>
       </Position11>
       <Position12>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="132" Column="77" TopLine="111"/>
+        <Caret Line="130" Column="42" TopLine="113"/>
       </Position12>
       <Position13>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="126" Column="23" TopLine="111"/>
+        <Caret Line="120" Column="11" TopLine="114"/>
       </Position13>
       <Position14>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="188" Column="1" TopLine="158"/>
+        <Caret Line="129" Column="27" TopLine="114"/>
       </Position14>
       <Position15>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="132" Column="43" TopLine="109"/>
+        <Caret Line="128" Column="42" TopLine="114"/>
       </Position15>
       <Position16>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="128" Column="31" TopLine="111"/>
+        <Caret Line="129" Column="33" TopLine="120"/>
       </Position16>
       <Position17>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="130" Column="42" TopLine="113"/>
+        <Caret Line="121" Column="11" TopLine="111"/>
       </Position17>
       <Position18>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="120" Column="11" TopLine="114"/>
+        <Caret Line="142" Column="63" TopLine="72"/>
       </Position18>
       <Position19>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="129" Column="27" TopLine="114"/>
+        <Caret Line="150" Column="3" TopLine="135"/>
       </Position19>
       <Position20>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="128" Column="42" TopLine="114"/>
+        <Caret Line="139" Column="21" TopLine="124"/>
       </Position20>
       <Position21>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="129" Column="33" TopLine="120"/>
+        <Caret Line="143" Column="5" TopLine="113"/>
       </Position21>
       <Position22>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="121" Column="11" TopLine="111"/>
+        <Caret Line="119" Column="8" TopLine="104"/>
       </Position22>
       <Position23>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="142" Column="63" TopLine="72"/>
+        <Caret Line="191" Column="13" TopLine="176"/>
       </Position23>
       <Position24>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="150" Column="3" TopLine="135"/>
+        <Caret Line="145" Column="5" TopLine="130"/>
       </Position24>
       <Position25>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="139" Column="21" TopLine="124"/>
+        <Caret Line="146" Column="12" TopLine="138"/>
       </Position25>
       <Position26>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="143" Column="5" TopLine="113"/>
+        <Caret Line="109" Column="1" TopLine="102"/>
       </Position26>
       <Position27>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="119" Column="8" TopLine="104"/>
+        <Caret Line="110" Column="27" TopLine="102"/>
       </Position27>
       <Position28>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="191" Column="13" TopLine="176"/>
+        <Caret Line="94" Column="22" TopLine="79"/>
       </Position28>
       <Position29>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="145" Column="5" TopLine="130"/>
+        <Caret Line="108" Column="9" TopLine="83"/>
       </Position29>
       <Position30>
         <Filename Value="gitinfo.pas"/>
-        <Caret Line="146" Column="12" TopLine="138"/>
+        <Caret Line="110" Column="27" TopLine="85"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
